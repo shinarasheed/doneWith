@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet, Image, Text, View } from 'react-native';
 
 const WelcomeScreen = () => {
   return (
@@ -8,7 +8,7 @@ const WelcomeScreen = () => {
       source={require('../assets/background.jpg')}
     >
       <View style={styles.logoContainer}>
-        <Image source={require('../assets/logo-red.png')} />
+        <Image style={styles.logo} source={require('../assets/logo-red.png')} />
         <Text>Sell What You don't need</Text>
       </View>
       <View style={styles.loginButton}></View>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     position: 'absolute',
     alignItems: 'center',
-    top: '70',
+    top: 70,
   },
   regsiterButton: {
     width: '100%',
